@@ -295,6 +295,12 @@ $$('.floating-button').on('click', function () {
     rollRandom();
 });
 
+	$$(document).keydown(function(evt) {
+		if (evt.keyCode == 32) {
+			rollRandom();
+		}
+	});
+
 function rollRandom() {
 	var content = "";
 	
