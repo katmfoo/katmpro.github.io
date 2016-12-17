@@ -1,0 +1,13 @@
+#grid {
+  display: block;
+  margin: 0 auto;
+}
+
+.controls {
+  width: 600px;
+  margin: 10px auto;
+}
+
+.right {
+  float: right;
+}

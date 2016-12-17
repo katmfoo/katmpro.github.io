@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Conway's Game of Life</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <canvas id="grid" width="601" height="601" onclick="activateCell(event)"></canvas>
+    <div class="controls">
+      <input type="button" value="Step" onclick="stepOnce()">
+      <input type="button" id="toggleRunning" value="Start" onclick="start()">
+      <input type="button" value="Clear" onclick="clearBoard()">
+      <div class="right">
+        <label>Speed: </label>
+        <input type="text" id="speed" value="100" onchange="updateSpeed()">
+      </div>
+    </div>
+  </body>
+</html>
